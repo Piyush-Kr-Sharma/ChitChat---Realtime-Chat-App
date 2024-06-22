@@ -8,6 +8,12 @@ const socket = require("socket.io");
 require("dotenv").config();
 
 app.use(cors());
+// Allow specific origin
+app.use(
+  cors({
+    origin: "https://chit-chat-realtime-chat-app-frontend.vercel.app",
+  })
+);
 app.use(express.json());
 
 mongoose
