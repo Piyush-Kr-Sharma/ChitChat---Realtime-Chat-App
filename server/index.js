@@ -11,7 +11,7 @@ app.use(cors());
 // Allow specific origin
 app.use(
   cors({
-    origin: "https://chit-chat-realtime-chat-app-frontend.vercel.app",
+    origin: "https://chit-chat-realtime-chat-app-frontend.vercel.app.com",
     methods: ["GET", "POST", "PUT", "DELETE"], // Adjust as needed
     credentials: true, // If you're using cookies for authentication
   })
