@@ -12,6 +12,8 @@ app.use(cors());
 app.use(
   cors({
     origin: "https://chit-chat-realtime-chat-app-frontend.vercel.app",
+    methods: ["GET", "POST", "PUT", "DELETE"], // Adjust as needed
+    credentials: true, // If you're using cookies for authentication
   })
 );
 app.use(express.json());
